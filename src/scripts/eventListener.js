@@ -6,13 +6,20 @@ console.log("test eventListener.js")   //HN: Testing that eventListener is linke
 //          **** Dolly ****
 //
     //Note from Hannah: I created variables for buttons & input fields for the search section but did not finish event listener (see my code below). Let me know if you want to use the variables I made.
-//          **** Hannah ****
+
+                            //          **** Hannah ****
 //
+    // Need an eventListener to wait for search button click
+    //When button is clicked, replace text in "Results" section with text typed into search bar.
 
-    //NOTE: HN created variables but eventListener function is not created yet:
+    let parksBtn = document.getElementById("parks-btn");
+        parksBtn.addEventListener("click", function() {
 
-    // let parksBtn = document.getElementById("parks-btn");
-    // let parkSearch = document.getElementById("parks-search");
+            console.log("parks button clicked"); //HN: Test. Button works.
+
+        })
+
+
 
     // let eventsBtn = document.getElementById("events-btn");
     // let eventsSearch = document.getElementById("events-search");

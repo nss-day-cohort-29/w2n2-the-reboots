@@ -2,7 +2,7 @@ console.log("test domBuilder.js")   //HN: Testing that domBuilder is linked to H
 
 //                      BEGIN SEARCH SECTION
 //HN: The code below is the search section containing search input fields and search buttons
-
+//Call the function 4 times with diff. parameters to loop
 let displayContainer = document.getElementById("display-container");
 displayContainer.innerHTML = `<section id="#search-section">
 <article>
@@ -13,7 +13,7 @@ displayContainer.innerHTML = `<section id="#search-section">
 <article>  
   <input type="text" id="events-search" placeholder="Search Events Here">
   <button type="submit" id="events-btn">Search Events</button>
-</article>
+</article> 
 <article>
   <input type="text" id="meetup-search" placeholder="Search Meetups Here">
   <button type="submit" id="meetups-btn">Search Meetups</button>
@@ -24,9 +24,14 @@ displayContainer.innerHTML = `<section id="#search-section">
 </article>
 </section>
 
-<section id="results-section">
+
+<div id="#results-section">
 <h3>Results</h3>
-</section>
+<article>
+<p id="parks-result"></p>
+<button type="submit" id="save-parks-btn">Save Park Results</button>
+</article>
+</div>
 
 <section id="itinerary-section">
 <h3>Itinerary</h3>
@@ -38,15 +43,17 @@ displayContainer.innerHTML = `<section id="#search-section">
 
 //                      BEGIN RESULTS SECTION
 
+
 //          **** Dek ****
 
-    //Note from Hannah: write your own function here that appends the results from your API to this section.
+    //Note from Hannah: append your results here
 
 //          **** Dolly ****
 
-    //Note from Hannah: write your own function here that appends the results from your API to this section.
+    //Note from Hannah: append your results here
 
 //          **** Hannah ****
+
 
 //                      END RESULTS SECTION
 
@@ -54,11 +61,11 @@ displayContainer.innerHTML = `<section id="#search-section">
 
 //          **** Dek ****
 
-    //Note from Hannah: write your own function here that appends the results from your saved results to this section.
+    //Note from Hannah: append your results here
 
 //          **** Dolly ****
 
-    //Note from Hannah: write your own function here that appends the results from saved results to this section.
+    //Note from Hannah: append your results here
 
 //          **** Hannah ****
 
