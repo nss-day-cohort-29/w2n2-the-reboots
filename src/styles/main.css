@@ -5,3 +5,13 @@
 
 
 /*         **** Hannah **** */
+
+
+#results-section {
+    border: 3px solid black;
+    background-color: lightslategray;
+}
+#itinerary-section {
+    border: 3px solid black;
+    background-color: lightblue;
+}
