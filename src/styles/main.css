@@ -5,9 +5,20 @@
 
 
 /*         **** Hannah **** */
-
+/* #display-container {
+    border: 3px solid pink;
+    background-color: lightskyblue;
+} */
 
 #results-container {
     border: 3px solid black;
     background-color: lightslategray;
+
 }
+
+#results-section {
+    border: 3px solid pink;
+    background-color: lightblue;
+}
+
+
