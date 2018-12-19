@@ -12,11 +12,11 @@ const data = {
             let eventName =event.name;
             let eventDate = event.dates.start.localDate;
             let concertMailBox = concertBuilder(eventName,eventDate);
-            concertBuilder(eventName, eventDate)
-            console.log(concertMailBox)             
-        concertAppender(concertMailBox);
+            concertBuilder(eventName, eventDate);
+            console.log(concertMailBox);
+            concertAppender(concertMailBox);
         });
-        
+        clickSave()
     });
     }
 }

@@ -41,9 +41,9 @@ displayContainer.innerHTML = `<section id="#search-section">
 //         **** Dek ****
 concertBuilder = function(eventName, eventDate){
 return `<div>
-<button id="save-button">"save"</button>
     <h3>${eventName}</h3>
     <p>${eventDate}</p>
+    <button class ="save-button">"save"</button>
 </div>`
 }
 concertLocationBuilder = function(locationName, locationAddress) {
