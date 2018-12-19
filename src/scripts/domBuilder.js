@@ -54,13 +54,9 @@ concertLocationBuilder = function(locationName, locationAddress) {
     `
 }
 
-
-
-    //Note from Hannah: write your own function here that appends the results from your API to this section.
-
 //          **** Dolly ****
 
-    //Note from Hannah: write your own function here that appends the results from your API to this section.
+
 
 //          **** Hannah ****
 

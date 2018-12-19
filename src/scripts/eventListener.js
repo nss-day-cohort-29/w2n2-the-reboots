@@ -3,7 +3,7 @@
 //          **** Dek ***
 
 
-document.querySelector("#concerts-btn").addEventListener("click", function(even) {
+document.querySelector("#concerts-btn").addEventListener("click", function(event) {
     let concertSearch1 = document.getElementById("concerts-search");
     console.log(concertSearch1.value);
     data.concertData(concertSearch1.value)
@@ -43,7 +43,6 @@ let getSavedResult = (event) => {
     //    Then runs "getSavedResult" defined at line 37
        saveButton[i].addEventListener("click", getSavedResult);
     }
-
  }
 
 // getSavedResult(event)
@@ -56,23 +55,8 @@ let getSavedResult = (event) => {
 
 
 
-//Note from Hannah: I created variables for buttons & input fields for the search section but did not finish event listener (see my code below). Let me know if you want to use the variables I made.
+//Note from Hannah:
 //          **** Dolly ****
 //
-    //Note from Hannah: I created variables for buttons & input fields for the search section but did not finish event listener (see my code below). Let me know if you want to use the variables I made.
+    //Note from Hannah:
 //          **** Hannah ****
-//
-
-    //NOTE: HN created variables but eventListener function is not created yet:
-
-    // let parksBtn = document.getElementById("parks-btn");
-    // let parkSearch = document.getElementById("parks-search");
-
-    // let eventsBtn = document.getElementById("events-btn");
-    // let eventsSearch = document.getElementById("events-search");
-
-    // let meetupBtn = document.getElementById("meetup-btn");
-    // let meetupSearch = document.getElementById("meetup-search");
-
-    // let concertsBtn = document.getElementById("concerts-btn");
-    // let concertsSearch = document.getElementById("concerts-search");
