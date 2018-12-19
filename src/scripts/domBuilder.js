@@ -1,4 +1,4 @@
-console.log("test domBuilder.js")   //HN: Testing that domBuilder is linked to HTML.
+// console.log("test domBuilder.js")   //HN: Testing that domBuilder is linked to HTML.
 
 //                      BEGIN SEARCH SECTION
 //HN: The code below is the search section containing search input fields and search buttons
@@ -38,7 +38,23 @@ displayContainer.innerHTML = `<section id="#search-section">
 
 //                      BEGIN RESULTS SECTION
 
-//          **** Dek ****
+//         **** Dek ****
+concertBuilder = function(eventName, eventDate){
+return `<div>
+    <h3>${eventName}</h3>
+    <p>${eventDate}</p>
+    <button class ="save-button">"save"</button>
+</div>`
+}
+concertLocationBuilder = function(locationName, locationAddress) {
+    return `<div>
+    <h3>${locationName}</h3>
+    <p>${locationAddress}</p>
+    </div>
+    `
+}
+
+
 
     //Note from Hannah: write your own function here that appends the results from your API to this section.
 
@@ -53,8 +69,10 @@ displayContainer.innerHTML = `<section id="#search-section">
 //                      BEGIN ITINERARY SECTION
 
 //          **** Dek ****
+// let concert =function(name, date) {
+    
 
-    //Note from Hannah: write your own function here that appends the results from your saved results to this section.
+//Note from Hannah: write your own function here that appends the results from your saved results to this section.
 
 //          **** Dolly ****
 
