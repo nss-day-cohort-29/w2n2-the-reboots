@@ -3,7 +3,7 @@
 //          **** Dek ***
 
 
-document.querySelector("#concerts-btn").addEventListener("click", function(even) {
+document.querySelector("#concerts-btn").addEventListener("click", function(event) {
     let concertSearch1 = document.getElementById("concerts-search");
     console.log(concertSearch1.value);
     data.concertData(concertSearch1.value)
@@ -43,36 +43,66 @@ let getSavedResult = (event) => {
     //    Then runs "getSavedResult" defined at line 37
        saveButton[i].addEventListener("click", getSavedResult);
     }
-
  }
 
 // getSavedResult(event)
 
-
-
-
-
-
-
-
-
-//Note from Hannah: I created variables for buttons & input fields for the search section but did not finish event listener (see my code below). Let me know if you want to use the variables I made.
 //          **** Dolly ****
 //
-    //Note from Hannah: I created variables for buttons & input fields for the search section but did not finish event listener (see my code below). Let me know if you want to use the variables I made.
 //          **** Hannah ****
-//
 
-    //NOTE: HN created variables but eventListener function is not created yet:
+// Need an eventListener to wait for search button click
+    // When button is clicked, replace text in "Results" section with text typed into search bar.
+    // Make sure old text/results clear out after Save button is clicked for any one result item.
 
-    // let parksBtn = document.getElementById("parks-btn");
-    // let parkSearch = document.getElementById("parks-search");
+// BUTTON:
+let parksSearchEvent = document.querySelector("parks-btn").addEventListener("click", function() {
+    let parksUserInput = document.querySelector("parks-search").value;
+});
+//This references the button in domBuilder but if Grady's code is used (the drop-down), this will reference the drop-down not a button
+ //HN: Test. Button works.
 
-    // let eventsBtn = document.getElementById("events-btn");
-    // let eventsSearch = document.getElementById("events-search");
+// EVENT LISTENER FORMAT FROM GRUNT-RESOURCE-TRACKER:
+// const eventListeners = {
+//     handleSearchButton() {
+//       let searchInput = document.querySelector("input[name='searchinput']");
+//       let searchQuery = searchInput.value;
 
-    // let meetupBtn = document.getElementById("meetup-btn");
-    // let meetupSearch = document.getElementById("meetup-search");
+//       data.queryResources(searchQuery)
+//       .then(searchResultsArray => {
+//         console.log(searchResultsArray);
+//       })
 
-    // let concertsBtn = document.getElementById("concerts-btn");
-    // let concertsSearch = document.getElementById("concerts-search");
+//     }
+//   };
+
+// DOLLY'S EXAMPLE OF EVENT LISTENER:
+//IN EVENT LISTENER SECTION:
+// const eventListeners = {
+//     handleSearchButton() {
+//       let searchInput = document.querySelector("#searchBox");
+//       let searchQuery = searchInput.value;
+
+//       data.queryResources(searchQuery)
+//       .then(searchResultsArray => {
+//         console.log(searchResultsArray);
+//         let resultFragments = domComponents.createResultFragment(searchResultsArray);
+//         console.log(resultFragments);
+//         domBuilder.appendResultContainer(resultFragments);
+//       });
+//     }
+//   };
+
+// IN DOMBUILDER SECTION:
+// let searchButton = document.querySelector("#search-button");
+//   searchButton.addEventListener("click",eventListeners.handleSearchButton);
+
+
+// MY EVENT LISTENER USING GRUNT-RESOURCE-TRACKER AS A REFERENCE:
+
+// const parksSearchEventListener = {
+//     parksSearchHandler() {
+//         let parksSearchInput = document.querySelector("parks-search");
+//         let searchQuery = parksSearchInput.value;
+//     }
+// }

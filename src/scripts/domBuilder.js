@@ -54,13 +54,7 @@ concertLocationBuilder = function(locationName, locationAddress) {
     `
 }
 
-
-
-    //Note from Hannah: write your own function here that appends the results from your API to this section.
-
 //          **** Dolly ****
-
-    //Note from Hannah: write your own function here that appends the results from your API to this section.
 
 //          **** Hannah ****
 
@@ -79,5 +73,48 @@ concertLocationBuilder = function(locationName, locationAddress) {
     //Note from Hannah: write your own function here that appends the results from saved results to this section.
 
 //          **** Hannah ****
+
+  //Drop-down menu form begins here. Compliments of Grady Robbins:
+
+  // <form>
+  //       <h1>Welcome to Nashville</h1>
+  //       <fieldset>
+  //         <legend> Search for stuff to do today: </legend>
+  //           <section>
+  //             <select name="parksearch" id="parksearch" >
+  //                 <option value="" selected disabled hidden>Parks by feature</option>
+  //                 <option value="ada_accessible">ADA Accessible</option>
+  //                 <option value="baseball_fields">Baseball Fields</option>
+  //                 <option value="basketball_courts">Basketball Courts</option>
+  //                 <option value="boat_launch">Boat Launch</option>
+  //                 <option value="community_center">Community Center</option>
+  //                 <option value="disc_golf">Disc Golf</option>
+  //                 <option value="dog_park">Dog Park</option>
+  //                 <option value="fishing_by_permit">Fishing</option>
+  //                 <option value="football_multi_purpose_fields">Football Fields</option>
+  //                 <option value="hiking_trails">Hiking Trails</option>
+  //                 <option value="horse_trails">Horse Trails</option>
+  //                 <option value="lake">Lake</option>
+  //                 <option value="playground">Playground</option>
+  //                 <option value="restrooms_available">Restrooms Available</option>
+  //                 <option value="skate_park">Skate Park</option>
+  //                 <option value="soccer_fields">Soccer Fields</option>
+  //                 <option value="swimming_pool">Swimming Pool</option>
+  //                 <option value="tennis_courts">Tennis Courts</option>
+  //                 <option value="walk_jog_paths">Walking/Jogging Paths</options>
+  //               </select>
+  //             <button type="button" id="park_search_btn">Search Parks</button>
+  //           </br>
+  //             <input type="text" name="restaurants" id="dine_search_bar" placeholder="Search Restaurants by Food Type">
+  //             <button type="button" id="dine_search_btn">Search Restaurants</button>
+  //           </br>
+  //             <input type="text" name="meetups" id="meet_search_bar" placeholder="Search Meetups by Topic">
+  //             <button type="button" id="meet_search_btn">Search Meetups</button>
+  //           </br>
+  //             <input type="text" name="concerts" id="show_search_bar" placeholder="Search Concerts by Genre">
+  //             <button type="button" id="show_search_btn">Search Live Shows</button>
+  //         </section>
+  //     </form>
+  //                                Drop-down menu form ENDS here.
 
 //                      END ITINERARY SECTION
