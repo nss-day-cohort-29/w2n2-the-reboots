@@ -56,8 +56,6 @@ concertLocationBuilder = function(locationName, locationAddress) {
 
 //          **** Dolly ****
 
-
-
 //          **** Hannah ****
 
 //                      END RESULTS SECTION
