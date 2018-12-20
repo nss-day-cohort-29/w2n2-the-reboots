@@ -12,20 +12,9 @@ document.querySelector("#concerts-btn").addEventListener("click", function(event
 
 });
 
-
 // This runs itineraryBuilder inside domBuilder and adds the HTML and a button class depending on what API was called.
-let getSavedResult = (event) => {
-    // let save = document.getElementsByClassName("save-button");
 
-    if (event.target.classList[0] === "save-button") {
-    // let savedHTML = event.target.parentElement.firstElementChild.innerHTML;
 
-    console.log("whats up")
-
-    }else {
-        console.log("not working")
-    }
-}
 
 
 //     let itineraryDiv = document.getElementById("#itinerary-section");
@@ -44,6 +33,7 @@ let getSavedResult = (event) => {
        saveButton[i].addEventListener("click", getSavedResult);
     }
  }
+ 
 
 // getSavedResult(event)
 

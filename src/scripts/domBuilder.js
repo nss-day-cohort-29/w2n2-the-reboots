@@ -23,14 +23,22 @@ displayContainer.innerHTML = `<section id="#search-section">
   <button type="submit" id="concerts-btn">Search Concerts</button>
 </article>
 </section>
-
-<section id="results-section">
 <h3>Results</h3>
+<section id="results-section">
 </section>
+<h3>Itineray</h3>
+<div id="itinerary-container">
+<ul>
 
-<section id="itinerary-section">
-<h3>Itinerary</h3>
-</section>
+    <li id="restaurant-container">Restaurant:  </li>
+    <li id="concerts-container">Concerts:  </li>
+    <li id="meetups-container">Meetups:  </li>
+    <li id="parks-container">Parks:  </li>
+
+
+</ul>
+
+</div>
 
 </article>`
 
